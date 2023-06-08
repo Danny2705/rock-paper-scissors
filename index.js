@@ -10,6 +10,10 @@ document.querySelector(".scissors-btn").addEventListener('click', () => {
   playGame('scissors');
 });
 
+document.querySelector(".reset_score").addEventListener('click', () => {
+  resetScore();
+});
+
 const countScore = document.querySelector(".count_score");
 let scoreWin = document.getElementById("win-score");
 let scoreLose = document.getElementById("lose-score");
@@ -74,6 +78,13 @@ function playGame(playerMove) {
   document.querySelector(".result").innerHTML = `<div class="result_text">${result}</div>`;
 }
 
+function resetScore () {
+  scoreWin.innerText = 0;
+  scoreLose.innerText = 0;
+  scoreDraw.innerText = 0;
+  saveDatas();
+}
+
 function saveDatas() {
   const scoreData = {
     win: scoreWin.innerText,
@@ -92,5 +103,6 @@ function show() {
   }
 }
 show();
+
 
 
