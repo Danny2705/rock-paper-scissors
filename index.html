@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game_container">
+      <div class="play_game">
+        <h1>Welcome to Rock - Paper - Scissors game !!!</h1>
+        <div class="game_image">
+          <img src="images/paper-emoji.png" alt="Paper emoji" class="paper-btn"/>
+          
+          <img src="images/rock-emoji.png" alt="Rock emoji" class="rock-btn"/>
+
+          <img src="images/scissors-emoji.png" alt="Scissors emoji" class="scissors-btn" />
+        </div>
+
+        <p class="text">Click on an emoji to play</p>
+
+        <p class="result"></p>
+        <p class="moves"></p>
+
+        <div class="game_board">
+          <div class="game_board_score">
+            <h3>Score</h3>
+            <ul class="count_score">
+              <li>Win:<span id="win-score">0</span></li>
+
+              <li>Lose:<span id="lose-score">0</span></li>
+              
+              <li>Draw:<span id="draw-score">0</span></li>
+            </ul>
+          </div>
+
+          <button class="reset_score">Reset Score</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
