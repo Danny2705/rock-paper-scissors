@@ -1,2 +1,5 @@
-# rock-paper-scissors-Personal-Project-
-This is a Rock Paper Scissors game I make with HTML, CSS, JS
+# Rock Paper Scissor Game!
+## Description
+  1. HTML
+  2. CSS
+  3. Javascipt
