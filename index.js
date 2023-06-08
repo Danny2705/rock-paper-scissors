@@ -74,12 +74,15 @@ function playGame(playerMove) {
   }
   saveDatas();
 
-  document.querySelector(
-    ".moves"
-  ).innerHTML = `<div class="score_container">You <img src="images/${playerMove}-emoji.png" class="sub_emoj"> <img src="images/${computerMove}-emoji.png" class="sub_emoj"> Computer</div>`;
-  document.querySelector(
-    ".result"
-  ).innerHTML = `<div class="result_text">${result}</div>`;
+  document.querySelector(".moves").innerHTML = `
+  <div class="score_container">
+  You 
+  <img src="images/${playerMove}-emoji.png" class="sub_emoj"> 
+  <img src="images/${computerMove}-emoji.png" class="sub_emoj"> 
+  Computer
+  </div>`;
+  document.querySelector(".result").innerHTML = `
+  <div class="result_text">${result}</div>`;
 }
 
 function resetScore() {
