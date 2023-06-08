@@ -1,23 +1,23 @@
-document.querySelector(".paper-btn").addEventListener('click', () => {
-  playGame('paper');
-});
-
-document.querySelector(".rock-btn").addEventListener('click', () => {
-  playGame('rock');
-});
-
-document.querySelector(".scissors-btn").addEventListener('click', () => {
-  playGame('scissors');
-});
-
-document.querySelector(".reset_score").addEventListener('click', () => {
-  resetScore();
-});
-
 const countScore = document.querySelector(".count_score");
 let scoreWin = document.getElementById("win-score");
 let scoreLose = document.getElementById("lose-score");
 let scoreDraw = document.getElementById("draw-score");
+
+document.querySelector(".paper-btn").addEventListener("click", () => {
+  playGame("paper");
+});
+
+document.querySelector(".rock-btn").addEventListener("click", () => {
+  playGame("rock");
+});
+
+document.querySelector(".scissors-btn").addEventListener("click", () => {
+  playGame("scissors");
+});
+
+document.querySelector(".reset_score").addEventListener("click", () => {
+  resetScore();
+});
 
 function pickComputerMove() {
   const randomNumber = Math.random();
@@ -74,11 +74,15 @@ function playGame(playerMove) {
   }
   saveDatas();
 
-  document.querySelector('.moves').innerHTML = `<div class="score_container">You <img src="images/${playerMove}-emoji.png" class="sub_emoj"> <img src="images/${computerMove}-emoji.png" class="sub_emoj"> Computer</div>`;
-  document.querySelector(".result").innerHTML = `<div class="result_text">${result}</div>`;
+  document.querySelector(
+    ".moves"
+  ).innerHTML = `<div class="score_container">You <img src="images/${playerMove}-emoji.png" class="sub_emoj"> <img src="images/${computerMove}-emoji.png" class="sub_emoj"> Computer</div>`;
+  document.querySelector(
+    ".result"
+  ).innerHTML = `<div class="result_text">${result}</div>`;
 }
 
-function resetScore () {
+function resetScore() {
   scoreWin.innerText = 0;
   scoreLose.innerText = 0;
   scoreDraw.innerText = 0;
@@ -89,7 +93,7 @@ function saveDatas() {
   const scoreData = {
     win: scoreWin.innerText,
     lose: scoreLose.innerText,
-    draw: scoreDraw.innerText
+    draw: scoreDraw.innerText,
   };
   localStorage.setItem("score", JSON.stringify(scoreData));
 }
@@ -103,6 +107,3 @@ function show() {
   }
 }
 show();
-
-
-
