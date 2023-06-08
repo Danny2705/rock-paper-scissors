@@ -30,6 +30,8 @@ h1 {
 
 .game_image img {
     transition: transform 0.3s ease;
+    height: 300px;
+    width: 300px;
 }
 
 .game_image img:hover {
@@ -39,7 +41,8 @@ h1 {
 .text {
   display: flex;
   justify-content: center;
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 30px;
   font-size: 1.5rem;
 }
 
@@ -95,4 +98,8 @@ h1 {
 
 .result_text {
     font-size: 2rem;
+}
+
+.wrapper {
+    display: flex;
 }

@@ -21,22 +21,26 @@
 
         <p class="text">Click on an emoji to play</p>
 
-        <p class="result"></p>
-        <p class="moves"></p>
+        <div class="wrapper">
+            <div>
+                <p class="result"></p>
+                <p class="moves"></p>
+            </div>
 
-        <div class="game_board">
-          <div class="game_board_score">
-            <h3>Score</h3>
-            <ul class="count_score">
-              <li>Win:<span id="win-score">0</span></li>
+            <div class="game_board">
+              <div class="game_board_score">
+                <h3>Score</h3>
+                <ul class="count_score">
+                  <li>Win:<span id="win-score">0</span></li>
+                  <li>Lose:<span id="lose-score">0</span></li>
+            
+                  <li>Draw:<span id="draw-score">0</span></li>
+                </ul>
+              </div>
+              <button class="reset_score">Reset Score</button>
+        </div>
 
-              <li>Lose:<span id="lose-score">0</span></li>
-              
-              <li>Draw:<span id="draw-score">0</span></li>
-            </ul>
-          </div>
-
-          <button class="reset_score">Reset Score</button>
+          
         </div>
       </div>
     </div>

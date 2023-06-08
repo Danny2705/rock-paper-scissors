@@ -39,7 +39,7 @@ function playGame(playerMove) {
     if (computerMove === "paper") {
       result = "You win the game!";
     } else if (computerMove === "rock") {
-      result = "You loose. Try again!";
+      result = "You lose. Try again!";
     } else if (computerMove === "scissors") {
       result = "Wow it is a draw";
     }
@@ -47,7 +47,7 @@ function playGame(playerMove) {
     if (computerMove === "scissors") {
       result = "You win the game!";
     } else if (computerMove === "paper") {
-      result = "You loose. Try again!";
+      result = "You lose. Try again!";
     } else if (computerMove === "rock") {
       result = "Wow it is a draw";
     }
@@ -55,7 +55,7 @@ function playGame(playerMove) {
     if (computerMove === "rock") {
       result = "You win the game!";
     } else if (computerMove === "scissors") {
-      result = "You loose. Try again!";
+      result = "You lose. Try again!";
     } else if (computerMove === "paper") {
       result = "Wow it is a draw";
     }
@@ -63,7 +63,7 @@ function playGame(playerMove) {
 
   if (result === "You win the game!") {
     scoreWin.innerText = parseInt(scoreWin.innerText) + 1;
-  } else if (result === "You loose. Try again!") {
+  } else if (result === "You lose. Try again!") {
     scoreLose.innerText = parseInt(scoreLose.innerText) + 1;
   } else if (result === "Wow it is a draw") {
     scoreDraw.innerText = parseInt(scoreDraw.innerText) + 1;
